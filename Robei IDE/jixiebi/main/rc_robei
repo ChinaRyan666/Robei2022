@@ -1,0 +1,12 @@
+{
+    "expandedFolders": [
+        "./robei_sdk/drivers",
+        "./robei_sdk/env/robei",
+        ".",
+        "./src"
+    ],
+    "opened": [
+        "./src/main.c",
+        "./robei_sdk/env/robei/platform.h"
+    ]
+}

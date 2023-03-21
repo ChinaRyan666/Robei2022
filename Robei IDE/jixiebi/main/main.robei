@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RobeiProject projectName="main" Version="0.1" Date="20220119">
+    <Folder folderPath="./src" folderName="src">
+        <File fileName="main.c"/>
+    </Folder>
+    <Folder folderPath="./inc" folderName="inc">
+        <File fileName="config.h"/>
+        <File fileName="sys.h"/>
+    </Folder>
+    <Folder folderPath="./robei_sdk" folderName="robei_sdk">
+        <Folder folderPath="./robei_sdk/env" folderName="env">
+            <Folder folderPath="./robei_sdk/env/robei" folderName="robei">
+                <File fileName="platform.h"/>
+                <File fileName="init.c"/>
+            </Folder>
+            <File fileName="entry.S"/>
+            <File fileName="rtos_start.S"/>
+            <File fileName="start.S"/>
+        </Folder>
+        <Folder folderPath="./robei_sdk/drivers" folderName="drivers">
+            <File fileName="robei_MPU.h"/>
+            <File fileName="robei_MPU.c"/>
+            <File fileName="robei_GPIO.c"/>
+            <File fileName="robei_GPIO.h"/>
+            <File fileName="robei_DMA.c"/>
+            <File fileName="robei_DMA.h"/>
+            <File fileName="robei_IIC.c"/>
+            <File fileName="robei_IIC.h"/>
+            <File fileName="robei_IWDG.c"/>
+            <File fileName="robei_IWDG.h"/>
+            <File fileName="robei_MEMIO.c"/>
+            <File fileName="robei_MEMIO.h"/>
+            <File fileName="robei_RTC.c"/>
+            <File fileName="robei_RTC.h"/>
+            <File fileName="robei_SPI.c"/>
+            <File fileName="robei_SPI.h"/>
+            <File fileName="robei_SYSCLK.c"/>
+            <File fileName="robei_SYSCLK.h"/>
+            <File fileName="robei_WWDG.c"/>
+            <File fileName="robei_WWDG.h"/>
+            <File fileName="robei_IT.c"/>
+            <File fileName="robei_IT.h"/>
+            <File fileName="robei_UART.c"/>
+            <File fileName="robei_UART.h"/>
+            <File fileName="robei_TIM16.c"/>
+            <File fileName="robei_TIM16.h"/>
+            <File fileName="robei_TIM32.c"/>
+            <File fileName="robei_TIM32.h"/>
+        </Folder>
+        <Folder folderPath="./robei_sdk/libwrap" folderName="libwrap">
+            <Folder folderPath="./robei_sdk/libwrap/misc" folderName="misc">
+                <File fileName="write_hex.c"/>
+            </Folder>
+            <Folder folderPath="./robei_sdk/libwrap/stdlib" folderName="stdlib">
+                <File fileName="malloc.c"/>
+            </Folder>
+            <Folder folderPath="./robei_sdk/libwrap/sys" folderName="sys">
+                <File fileName="_exit.c"/>
+                <File fileName="close.c"/>
+                <File fileName="execve.c"/>
+                <File fileName="fork.c"/>
+                <File fileName="fstat.c"/>
+                <File fileName="getpid.c"/>
+                <File fileName="isatty.c"/>
+                <File fileName="kill.c"/>
+                <File fileName="link.c"/>
+                <File fileName="lseek.c"/>
+                <File fileName="open.c"/>
+                <File fileName="openat.c"/>
+                <File fileName="puts.c"/>
+                <File fileName="read.c"/>
+                <File fileName="sbrk.c"/>
+                <File fileName="stat.c"/>
+                <File fileName="times.c"/>
+                <File fileName="unlink.c"/>
+                <File fileName="wait.c"/>
+                <File fileName="write.c"/>
+            </Folder>
+        </Folder>
+    </Folder>
+    <Property>
+        <Optimization msgLen="0" singlePresi="0" oOFlag="" lto="0" noCom="0" funSec="1" level="-O0" pIC="0" dataSec="1" noInline="0" noBuiltin="0" freeStand="0" noMove="0" charSign="0"/>
+        <Warning wPoint="0" pedantic="0" inhibitW="0" pedanticErr="0" wShadow="0" wUnused="1" syntax="-0" wAll="0" wAgre="0" wUninit="0" wErr="0" wMiss="0" wPad="0" wExtra="0" wLogic="0" wFloat="0" wConver="0"/>
+        <Debug level="-g3" prof="0" flags="ABCD" format="default" gprof="0"/>
+        <Assembler>
+            <Preprocessor preProOnly="0" usePrepro="1" DSymbol="" UDSymbol="" noStdinc="0"/>
+            <Includes incSystem="" otherFlag="12345" incFile="" inc="${projectPath}/robei_sdk/env ${projectPath}/robei_sdk/include ${projectPath}/robei_sdk/env/robei ${projectPath}/robei_sdk/drivers"/>
+            <Warning otherWarning=""/>
+            <Miscellaneous otherFlag="12345" assemFlag="" verbose="0" saveTemp="0" genAssem="0"/>
+        </Assembler>
+        <CCompiler>
+            <Preprocessor preProOnly="0" DSymbol="" UDSymbol="" noStdinc="0"/>
+            <Includes incSystem="" incFile="" inc="${projectPath}/robei_sdk/drivers ${projectPath}/inc ${projectPath}/robei_sdk/env ${projectPath}/robei_sdk/env/robei ${projectPath}/robei_sdk/include"/>
+            <Optimization otherFlag="" langStand="2020"/>
+            <Warning strictPrototype="0" otherFlag="" missPrototype="0" badFunction="0"/>
+            <Miscellaneous otherFlag="" verbose="0" saveTemp="0" genAssem="0"/>
+        </CCompiler>
+        <CLinker>
+            <General noStdLib="0" omit="" scriptFile="${projectPath}/robei_sdk/env/robei/flash.lds" removeUnusedSec="0" printUnuseSec="0" noDefaultLibs="0" noStartFile="0"/>
+            <Lib libraries="" librarySearchPath=""/>
+            <Miscellaneous nanoPrintf="0" noSyscall="0" printMap="0" otherObject="" nanoLib="0" linkerFlag="" cref="0" verbose="0" nanoScanf="0" otherLinkFlag=""/>
+        </CLinker>
+        <FlashImage>
+            <General otherSec="" otherFlag="" secJdata="0" outputFormat="" secJtext="0"/>
+        </FlashImage>
+        <PrintSize>
+            <General sizeFormat="" otherFlag="" hex="0" showTotal="0"/>
+        </PrintSize>
+    </Property>
+</RobeiProject>

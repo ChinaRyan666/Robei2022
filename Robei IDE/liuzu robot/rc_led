@@ -1,0 +1,12 @@
+{
+    "expandedFolders": [
+        ".",
+        "./robei_sdk",
+        "./src",
+        "./robei_sdk/drivers"
+    ],
+    "opened": [
+        "./robei_sdk/drivers/robei_UART.c",
+        "./src/main.c"
+    ]
+}

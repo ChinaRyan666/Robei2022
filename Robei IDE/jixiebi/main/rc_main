@@ -1,0 +1,19 @@
+{
+    "expandedFolders": [
+        "./robei_sdk/env",
+        "./src",
+        "./robei_sdk",
+        ".",
+        "./robei_sdk/libwrap/misc",
+        "./robei_sdk/drivers",
+        "./robei_sdk/env/robei",
+        "./robei_sdk/libwrap/sys",
+        "./inc",
+        "./robei_sdk/libwrap/stdlib",
+        "./robei_sdk/libwrap"
+    ],
+    "opened": [
+        "./src/main.c",
+        "./robei_sdk/drivers/robei_UART.c"
+    ]
+}
